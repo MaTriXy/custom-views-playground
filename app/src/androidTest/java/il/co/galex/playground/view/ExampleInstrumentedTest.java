@@ -1,4 +1,4 @@
-package il.co.galex.playground.views;
+package il.co.galex.playground.view;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

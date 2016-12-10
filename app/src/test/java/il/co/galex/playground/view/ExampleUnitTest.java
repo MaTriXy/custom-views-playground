@@ -1,4 +1,4 @@
-package il.co.galex.playground.views;
+package il.co.galex.playground.view;
 
 import org.junit.Test;
 

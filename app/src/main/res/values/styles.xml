@@ -22,4 +22,10 @@
     </style>
 
 
+    <style name="TooltipText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
 </resources>

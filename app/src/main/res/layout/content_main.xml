@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:id="@+id/content_main"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              app:layout_behavior="@string/appbar_scrolling_view_behavior"
-              tools:context="il.co.galex.playground.activity.MainActivity"
-              tools:showIn="@layout/app_bar_main">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/content_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#2d2d2a"
+                android:orientation="vertical">
 
-    <il.co.galex.playground.views.EmptyView
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/show_tooltip"/>
+
+
+    <il.co.galex.playground.view.TooltipView
+        android:id="@+id/tooltip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        app:arrowHeight="@dimen/tooltip_arrow_height"
+        app:arrowWidth="@dimen/tooltip_arrow_width"
+        app:backgroundColor="@android:color/white"
+        app:text="@string/hello_attenders"
+        app:textColor="@android:color/black"
+        app:textSize="18sp"
+        android:padding="5dp"/>
+
+
+    <il.co.galex.playground.view.EmptyView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <il.co.galex.playground.views.EmptyView
-        style="@style/AppTheme.EmptyView"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+</RelativeLayout>

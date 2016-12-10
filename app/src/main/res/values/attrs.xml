@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Tooltip">
+        <!-- Color for the background of the tooltip -->
+        <attr name="backgroundColor" format="color"/>
+        <!-- Color for the text of the tooltip -->
+        <attr name="textColor" format="color"/>
+        <!-- TextSize of the tooltip -->
+        <attr name="textSize" format="dimension"/>
+        <!-- Height of the arrow -->
+        <attr name="arrowHeight" format="dimension"/>
+        <!-- Width of the arrow -->
+        <attr name="arrowWidth" format="dimension"/>
+        <!-- The text itself -->
+        <attr name="text" format="string" />
+    </declare-styleable>
+</resources>
